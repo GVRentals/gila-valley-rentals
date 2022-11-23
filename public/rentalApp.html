@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rental Application | Gila Valley Rentals</title>
+    <script src="dist/index.js" type="module"></script>
+    <link rel="stylesheet" href="./rentalApp.css">
+</head>
+<body>
+    <div class="testbox">
+        <form id="form">
+            <div class="item">
+                <p>Name</p>
+                <div class="name-item">
+                    <input type="text" name="First" placeholder="First" required/> 
+                    <input type="text" name="Last" placeholder="Last" required/>
+                </div>
+            </div>
+            <!-- <div class="banner">
+                <h1>Rental Application</h1>
+            </div>
+            <h3>Personal Information</h3>
+            <div class="item">
+                <p>Name</p>
+                <div class="name-item">
+                    <input type="text" name="First" placeholder="First" required/>
+                    <input type="text" name="Last" placeholder="Last" required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Birth Date</p>
+                <input type="date" name="bdate" required />
+                <i class="fas fa-calendar-alt"></i>
+            </div>
+            <div class="item">
+                <p>Phone Number and Email</p>
+                <div class="name-item">
+                    <input type="text" name="name" placeholder="Phone"required/>
+                    <input type="text" name="name" placeholder="Email"required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Name of Co-Tenant</p>
+                <div class="name-item">
+                    <input type="text" name="First" placeholder="First" required />
+                    <input type="text" name="Last" placeholder="Last" required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Current Rent and Length of Stay</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Current Rent"required/>
+                    <input type="text" name="name" placeholder="Length of Stay"required/>
+                </div>
+            </div>
+            <p>Current Address</p>
+            <div class="item">
+                <input type="text" name="name" placeholder="Street address" required/>
+                <input type="text" name="name" placeholder="Street address line 2"/>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="City" required/>
+                    <input type="text" name="name" placeholder="State" required/>
+                    <input type="text" name="name" placeholder="Postal / Zip code" required/>
+                    <select>
+                        <option value="">Country</option>
+                        <option value="1">France</option>
+                        <option value="2">Germany</option>
+                        <option value="3">Mexico</option>
+                        <option value="4">Russia</option>
+                        <option value="5" selected>USA</option>
+                    </select>
+                </div>
+            </div>
+            
+            <h3>Present Occupation Information</h3>  
+            <div class="item">
+                <p>Employer and Employer Phone Number</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Employer"required/>
+                    <input type="text" name="name" placeholder="Employer Phone Number"required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Business Address</p>
+                <input type="text" name="address" required />
+            </div>
+            <div class="item">
+                <p>Length of Tenure and Monthly Gross Income</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Tenure"required/>
+                    <input type="text" name="name" placeholder="Monthly Gross Income"required/>
+                </div>
+            </div>
+
+            <h3>Prior Occupation Information</h3>  
+            <div class="item">
+                <p>Employer and Employer Phone Number</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Employer"required/>
+                    <input type="text" name="name" placeholder="Employer Phone Number"required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Business Address</p>
+                <input type="text" name="address" required />
+            </div>
+            <div class="item">
+                <p>Length of Tenure and Monthly Gross Income</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Tenure"required/>
+                    <input type="text" name="name" placeholder="Monthly Gross Income"required/>
+                </div>
+            </div>
+
+            <h3>Personal Reference</h3>
+            <div class="item">
+                <p>Name and Phone Number</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Name"required/>
+                    <input type="text" name="name" placeholder="Phone Number"required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Address</p>
+                <input type="text" name="address" required />
+            </div>
+            <div class="item">
+                <p>Length of Acquaintance and Occupation</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Length of Acquaintance"required/>
+                    <input type="text" name="name" placeholder="Occupation"required/>
+                </div>
+            </div>
+
+            <h3>Nearest Relative</h3>
+            <div class="item">
+                <p>Name and Phone Number</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Name"required/>
+                    <input type="text" name="name" placeholder="Phone Number"required/>
+                </div>
+            </div>
+            <div class="item">
+                <p>Address</p>
+                <input type="text" name="address" required />
+            </div>
+            <div class="item">
+                <p>Relationship and Occupation</p>
+                <div class="city-item">
+                    <input type="text" name="name" placeholder="Relationship"required/>
+                    <input type="text" name="name" placeholder="Occupation"required/>
+                </div>
+            </div>
+            <hr>
+            <div class="question">
+                <p>Have you ever filed a petition for bankruptcy?</p>
+                <div class="question-answer">
+                    <input type="radio" value="none" id="radio_1" name="bankrupt" />
+                    <label for="radio_1" class="radio"><span>Yes</span></label>
+                    <input type="radio" value="none" id="radio_2" name="bankrupt" />
+                    <label for="radio_2" class="radio"><span>No</span></label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Have you ever been evicted from any tenancy?</p>
+                <div class="question-answer">
+                    <input type="radio" value="none" id="radio_3" name="evicted" />
+                    <label for="radio_3" class="radio"><span>Yes</span></label>
+                    <input type="radio" value="none" id="radio_4" name="evicted" />
+                    <label for="radio_4" class="radio"><span>No</span></label>
+                </div>
+            </div>
+            <div class="question">
+                <p>Have you ever willfully and intentionally refused to pay any rent when due?</p>
+                <div class="question-answer">
+                    <input type="radio" value="none" id="radio_5" name="rent" />
+                    <label for="radio_5" class="radio"><span>Yes</span></label>
+                    <input type="radio" value="none" id="radio_6" name="rent" />
+                    <label for="radio_6" class="radio"><span>No</span></label>
+                </div>
+            </div>
+            <div class="question">
+                <p><strong>I DECLARE THAT THE FOREGOING INFORMATION IS TRUE AND CORRECT. 
+                    I AUTHORIZE ITS VERIFICATION AND THE OBTAINING OF A CONSUMER CREDIT REPORT.</strong></p>
+                <div class="question-answer">
+                    <input type="radio" value="none" id="radio_7" name="authorization" />
+                    <label for="radio_7" class="radio"><span>I Agree</span></label>
+                    <input type="radio" value="none" id="radio_8" name="authorization" />
+                    <label for="radio_8" class="radio"><span>I Do Not Agree</span></label>
+                </div>
+            </div>
+            <strong>I agree that Landlord may terminate any agreement entered into in 
+                reliance on any misstatement made above.</strong>
+            <div class="item">
+                <p>Applicant:</p>
+                <input type="text" name="name" required/>
+                <p>Date:</p>
+                <input type="date" name="date" required />
+                <i class="fas fa-calendar-alt"></i>
+            </div> -->
+            <div class="btn-block">
+                <button type="submit">Apply</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

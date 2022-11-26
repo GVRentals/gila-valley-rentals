@@ -10,58 +10,51 @@
 <body>
     <div class="testbox">
         <form id="form">
-            <div class="item">
-                <p>Name</p>
-                <div class="name-item">
-                    <input type="text" name="First" placeholder="First" required/> 
-                    <input type="text" name="Last" placeholder="Last" required/>
-                </div>
-            </div>
-            <!-- <div class="banner">
+            <div class="banner">
                 <h1>Rental Application</h1>
             </div>
             <h3>Personal Information</h3>
             <div class="item">
                 <p>Name</p>
                 <div class="name-item">
-                    <input type="text" name="First" placeholder="First" required/>
-                    <input type="text" name="Last" placeholder="Last" required/>
+                    <input type="text" name="First" placeholder="First" id="firstName" required/>
+                    <input type="text" name="Last" placeholder="Last" id="lastName" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Birth Date</p>
-                <input type="date" name="bdate" required />
+                <input type="date" name="bdate" id="birthDate" required />
                 <i class="fas fa-calendar-alt"></i>
             </div>
             <div class="item">
                 <p>Phone Number and Email</p>
                 <div class="name-item">
-                    <input type="text" name="name" placeholder="Phone"required/>
-                    <input type="text" name="name" placeholder="Email"required/>
+                    <input type="text" name="name" placeholder="Phone" id="phoneNumber" required/>
+                    <input type="text" name="name" placeholder="Email" id="email" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Name of Co-Tenant</p>
                 <div class="name-item">
-                    <input type="text" name="First" placeholder="First" required />
-                    <input type="text" name="Last" placeholder="Last" required/>
+                    <input type="text" name="First" placeholder="First" id="coFirstName" required />
+                    <input type="text" name="Last" placeholder="Last" id="coLastName" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Current Rent and Length of Stay</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Current Rent"required/>
-                    <input type="text" name="name" placeholder="Length of Stay"required/>
+                    <input type="text" name="name" placeholder="Current Rent" id="curRent" required/>
+                    <input type="text" name="name" placeholder="Length of Stay" id="lengthOfStay" required/>
                 </div>
             </div>
             <p>Current Address</p>
             <div class="item">
-                <input type="text" name="name" placeholder="Street address" required/>
-                <input type="text" name="name" placeholder="Street address line 2"/>
+                <input type="text" name="name" placeholder="Street address" id="address" required/>
+                <input type="text" name="name" placeholder="Street address line 2" id="address2"/>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="City" required/>
-                    <input type="text" name="name" placeholder="State" required/>
-                    <input type="text" name="name" placeholder="Postal / Zip code" required/>
+                    <input type="text" name="name" placeholder="City" id="city" required/>
+                    <input type="text" name="name" placeholder="State" id="state" required/>
+                    <input type="text" name="name" placeholder="Postal / Zip code" id="zip" required/>
                     <select>
                         <option value="">Country</option>
                         <option value="1">France</option>
@@ -77,19 +70,19 @@
             <div class="item">
                 <p>Employer and Employer Phone Number</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Employer"required/>
-                    <input type="text" name="name" placeholder="Employer Phone Number"required/>
+                    <input type="text" name="name" placeholder="Employer" id="employer" required/>
+                    <input type="text" name="name" placeholder="Employer Phone Number" id="employerPhone" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Business Address</p>
-                <input type="text" name="address" required />
+                <input type="text" name="address" id="businessAddress" required />
             </div>
             <div class="item">
                 <p>Length of Tenure and Monthly Gross Income</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Tenure"required/>
-                    <input type="text" name="name" placeholder="Monthly Gross Income"required/>
+                    <input type="text" name="name" placeholder="Tenure" id="tenure" required/>
+                    <input type="text" name="name" placeholder="Monthly Gross Income" id="income" required/>
                 </div>
             </div>
 
@@ -97,19 +90,19 @@
             <div class="item">
                 <p>Employer and Employer Phone Number</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Employer"required/>
-                    <input type="text" name="name" placeholder="Employer Phone Number"required/>
+                    <input type="text" name="name" placeholder="Employer" id="priorEmployer" required/>
+                    <input type="text" name="name" placeholder="Employer Phone Number" id="priorEmployerPhone" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Business Address</p>
-                <input type="text" name="address" required />
+                <input type="text" name="address" id="priorBusinessAddress" required />
             </div>
             <div class="item">
                 <p>Length of Tenure and Monthly Gross Income</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Tenure"required/>
-                    <input type="text" name="name" placeholder="Monthly Gross Income"required/>
+                    <input type="text" name="name" placeholder="Tenure" id="priorTenure" required/>
+                    <input type="text" name="name" placeholder="Monthly Gross Income" id="priorIncome" required/>
                 </div>
             </div>
 
@@ -117,19 +110,19 @@
             <div class="item">
                 <p>Name and Phone Number</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Name"required/>
-                    <input type="text" name="name" placeholder="Phone Number"required/>
+                    <input type="text" name="name" placeholder="Name" id="referenceName" required/>
+                    <input type="text" name="name" placeholder="Phone Number" id="referencePhone" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Address</p>
-                <input type="text" name="address" required />
+                <input type="text" name="address" id="referenceAddress" required />
             </div>
             <div class="item">
                 <p>Length of Acquaintance and Occupation</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Length of Acquaintance"required/>
-                    <input type="text" name="name" placeholder="Occupation"required/>
+                    <input type="text" name="name" placeholder="Length of Acquaintance" id="referenceLength" required/>
+                    <input type="text" name="name" placeholder="Occupation" id="referenceJob" required/>
                 </div>
             </div>
 
@@ -137,19 +130,19 @@
             <div class="item">
                 <p>Name and Phone Number</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Name"required/>
-                    <input type="text" name="name" placeholder="Phone Number"required/>
+                    <input type="text" name="name" placeholder="Name" id="relativeName" required/>
+                    <input type="text" name="name" placeholder="Phone Number" id="relativePhone" required/>
                 </div>
             </div>
             <div class="item">
                 <p>Address</p>
-                <input type="text" name="address" required />
+                <input type="text" name="address" id="relativeAddress" required />
             </div>
             <div class="item">
                 <p>Relationship and Occupation</p>
                 <div class="city-item">
-                    <input type="text" name="name" placeholder="Relationship"required/>
-                    <input type="text" name="name" placeholder="Occupation"required/>
+                    <input type="text" name="name" placeholder="Relationship" id="relativeRelation" required/>
+                    <input type="text" name="name" placeholder="Occupation" id="relativeJob" required/>
                 </div>
             </div>
             <hr>
@@ -194,11 +187,11 @@
                 reliance on any misstatement made above.</strong>
             <div class="item">
                 <p>Applicant:</p>
-                <input type="text" name="name" required/>
+                <input type="text" name="name" id="signature" required/>
                 <p>Date:</p>
-                <input type="date" name="date" required />
+                <input type="date" name="date" id="date" required />
                 <i class="fas fa-calendar-alt"></i>
-            </div> -->
+            </div>
             <div class="btn-block">
                 <button type="submit">Apply</button>
             </div>

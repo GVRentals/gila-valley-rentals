@@ -90,7 +90,7 @@ async function submitRentalForm(data: any) {
     //     "email": "jaredmontierth1@gmail.com",
     //     "templateId": "d-2258e2bd67f84eb794cd2bf76c01ac49",
     // }
-    const err = await axios.post('http://localhost:3030/api/email', data)
+    const err = await axios.post('https://gila-valley-rentals-api-production.up.railway.app/api/email', data)
 		.then(() => null, err => err)
 	console.log(err)
     

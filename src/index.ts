@@ -96,7 +96,12 @@ async function submitRentalForm(data: any) {
     // }
     const err = await axios.post('https://gila-valley-rentals-api-production.up.railway.app/api/email', data)
 		.then(() => null, err => err)
+        .then(() => {
+            alert("Your application has been submitted! You will recieve an email with a copy of your submission.")
+            document.location.href = '/index.html'
+        })
 	console.log(err)
+    
     
 }
 

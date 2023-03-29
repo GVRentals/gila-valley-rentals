@@ -18,7 +18,7 @@
     <div class="banner-img">
         <div class="banner-container">
             <div class="banner-text">Gila Valley Rentals</div>
-            <p class="banner-text-small">Homes in Safford, Thatcher, & Pima</p>
+            <p class="banner-text-small">Homes and Storage</p>
             <a href="rentalApplication.html"><button class="banner-btn">Apply Now</button></a>
         </div>
     </div>
@@ -27,12 +27,38 @@
         <div class="contact">
             <div class="contact-container">
                 <p>For Inquires</p>
-                <br>
+                
                 <p class="contact-text">info@gilavalleyrentals.com</p>
                 <p class="contact-text">(928)792-1810</p>
                 <p class="contact-text">2700 W HWY 70 Thatcher, AZ 85552</p>
+                <br>
+                <br>
+                <p>Storage Unit Information</p>
+                
+                <p class="contact-text">Size: 6'x11'</p>
+                <p class="contact-text">Price: $40/month</p>
+                <p class="contact-text">If interested, contact us for location information</p>
             </div>
         </div>
     </a>
 </body>
+<script>
+    // Get the navigation bar
+    var navbar = document.querySelector('.nav');
+
+    // Get the offset position of the navigation bar
+    var sticky = navbar.offsetTop;
+
+    // Add the sticky class to the navigation bar when the user scrolls past the offset position
+    function stickyNavbar() {
+        if (window.pageYOffset >= sticky) {
+            navbar.classList.add('sticky');
+        } else {
+            navbar.classList.remove('sticky');
+        }
+    }
+
+    // Add an event listener to the window object to call the stickyNavbar function when the user scrolls
+    window.addEventListener('scroll', stickyNavbar);
+</script>
 </html>

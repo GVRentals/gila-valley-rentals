@@ -62,7 +62,10 @@ function getData() {
         "refusedRent": getRadio("radio_5", "radio_6"),
         "agreement": getRadio("radio_7", "radio_8"),
         "signature": getValue("signature"),
-        "date": getValue("date")
+        "date": getValue("date"),
+        "tenantIncome": getValue("tenantIncome"),
+        "cotenantIncome": getValue("cotenantIncome"),
+        "householdIncome": getValue("householdIncome")
     }
     return data
 }

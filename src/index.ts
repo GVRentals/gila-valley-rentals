@@ -26,6 +26,8 @@ function getData() {
         "email": getValue("email"),
         "coFirstName": getValue("coFirstName"),
         "coLastName": getValue("coLastName"),
+        "coPhoneNumber": getValue("coPhoneNumber"),
+        "coEmail": getValue("coEmail"),
         "curRent": getValue("curRent"),
         "lengthOfStay": getValue("lengthOfStay"),
         "address": getValue("address"),

@@ -1,148 +1,182 @@
-
 /* navy blue #183153 */
 /* gray #C0C0C0 */
 
-/* Set default font family and size */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  margin: 0;
-}
+/* ===============================
+   Base Styles
+   =============================== */
 
-/* Style the navigation bar */
-.nav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-.nav-item {
-  float: left;
-}
-
-.nav-item a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav-item a:hover {
-  background-color: #111;
-}
-
-/* Add sticky behavior to the navigation bar */
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-/* Media query for screens 500px or less */
-@media screen and (max-width: 500px) {
-  .nav {
-    text-align: center;
+   body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    margin: 0;
   }
   
+  .nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: relative;
+    z-index: 1000;
+  }
+    
+  
   .nav-item {
-    float: none;
-    display: inline-block;
+    float: left;
   }
   
   .nav-item a {
-    display: inline-block;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
   }
-}
-
-/* Style the banner section */
-.banner-img {
-  background-image: url(res/moutian.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 800px;
-}
-
-.banner-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  padding: 0 20px;
-  color: #fff;
-  text-align: center;
-}
-
-.banner-text {
-  font-size: 50px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-.banner-text-small {
-  font-size: 24px;
-  margin-bottom: 40px;
-}
-
-.banner-btn {
-  text-align: center;
-  position: relative;
-  font-size: 25pt;
-  color: #FFFFFF;
-  width: 280px;
-  height: 60px;
-  cursor: pointer;
-  background: #333333;
-  border: 0;
-}
-
-.banner-btn::after, .banner-btn::before {
-  content: '';
-  position: absolute;
-  width: 0;
-  height: 0;
-  transition: all 0.4s, opacity 0.1s 0.4s;
-  opacity: 0;
-}
-
-.banner-btn::after {
-  bottom: 0;
-  right: 0;
-  border-bottom: 3px solid #FFFFFF;
-  border-right: 3px solid #FFFFFF;
-}
-
-.banner-btn::before {
-  top: 0;
-  left: 0;
-  border-left: 3px solid #FFFFFF;
-  border-top: 3px solid #FFFFFF;
-}
-
-.banner-btn:hover::after, .banner-btn:hover::before {
-  width: calc(100% - 3px);
-  height: calc(100% - 3px);
-  transition: 0.4s, opacity 0.1s;
-  opacity: 1;
-}
-
-
-/* Style the contact section */
-.contact {
-  background-color: #f2f2f2;
-  padding: 50px 0;
-}
-
-.contact-container {
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-.contact-text {
-  font-size: 20px;
-  margin-bottom: 10px;
-}
+  
+  .nav-item a:hover {
+    background-color: #111;
+  }
+  
+  /* Sticky navigation */
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+  
+  /* Mobile navigation */
+  @media screen and (max-width: 500px) {
+    .nav {
+      text-align: center;
+    }
+  
+    .nav-item {
+      float: none;
+      display: inline-block;
+    }
+  
+    .nav-item a {
+      display: inline-block;
+    }
+  }
+  
+  /* ===============================
+     Banner / Hero Section
+     =============================== */
+  
+  .banner-img {
+    position: relative;
+    background-image: url(res/moutian.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 800px;
+  }
+  
+  /* Dark overlay for readability */
+  .banner-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.45);
+  }
+  
+  /* Content container */
+  .banner-container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 0 20px;
+    color: #fff;
+    text-align: center;
+  }
+  
+  /* Headline text */
+  .banner-text {
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-shadow: 0 3px 10px rgba(0, 0, 0, 0.6);
+  }
+  
+  /* Subheadline text */
+  .banner-text-small {
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-shadow: 0 2px 6px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Call-to-action button */
+  .banner-btn {
+    position: relative;
+    font-size: 25pt;
+    color: #FFFFFF;
+    width: 280px;
+    height: 60px;
+    cursor: pointer;
+    background: #183153; /* navy blue */
+    border: 0;
+  }
+  
+  /* Button border animation */
+  .banner-btn::after,
+  .banner-btn::before {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 0;
+    transition: all 0.4s, opacity 0.1s 0.4s;
+    opacity: 0;
+  }
+  
+  .banner-btn::after {
+    bottom: 0;
+    right: 0;
+    border-bottom: 3px solid #FFFFFF;
+    border-right: 3px solid #FFFFFF;
+  }
+  
+  .banner-btn::before {
+    top: 0;
+    left: 0;
+    border-left: 3px solid #FFFFFF;
+    border-top: 3px solid #FFFFFF;
+  }
+  
+  .banner-btn:hover {
+    background: #0f223a;
+  }
+  
+  .banner-btn:hover::after,
+  .banner-btn:hover::before {
+    width: calc(100% - 3px);
+    height: calc(100% - 3px);
+    transition: 0.4s, opacity 0.1s;
+    opacity: 1;
+  }
+  
+  /* ===============================
+     Contact Section
+     =============================== */
+  
+  .contact {
+    background-color: #f2f2f2;
+    padding: 50px 0;
+  }
+  
+  .contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  .contact-text {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  

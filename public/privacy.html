@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy | Gila Valley Rentals</title>
+    <link rel="icon" href="res/houseicon.png">
+    <link rel="stylesheet" href="index.css">
+</head>
+<header>
+    <ul class="nav">
+        <li class="nav-item"><a href="index.html#top"><span class="nav-item-text">HOME</span></a></li>
+        <li class="nav-item"><a href="https://my.innago.com/a/84fporT8Saz"><span class="nav-item-text">APPLICATION</span></a></li>
+        <li class="nav-item"><a href="index.html#contact-section"><span class="nav-item-text">CONTACT</span></a></li>
+        <li class="nav-item"><a href="privacy.html"><span class="nav-item-text">PRIVACY POLICY</span></a></li>
+    </ul>
+</header>
+<body>
+    <main class="page-container">
+        <h1 class="page-title">Privacy Policy</h1>
+        <p class="page-updated">Last updated: March 17, 2026</p>
+
+        <p>
+            This Privacy Policy explains how Gila Valley Rentals collects, uses, and shares information when you
+            visit our website or submit an application.
+        </p>
+
+        <h2>Information we collect</h2>
+        <ul>
+            <li><strong>Information you provide</strong>: When you contact us or submit an application, you may provide personal information such as your name, email, phone number, address, and other details required for processing.</li>
+            <li><strong>Usage information</strong>: Your browser may automatically share information such as your IP address, device type, and pages you visit.</li>
+        </ul>
+
+        <h2>How we use information</h2>
+        <ul>
+            <li>To respond to inquiries and communicate with you.</li>
+            <li>To process and manage rental applications.</li>
+            <li>To operate, maintain, and improve our website and services.</li>
+        </ul>
+
+        <h2>Sharing of information</h2>
+        <p>
+            We may share information with service providers who help us operate our website or deliver services
+            (for example, application or email services). We may also share information if required by law.
+        </p>
+
+        <h2>Third-party links</h2>
+        <p>
+            Our website may link to third-party sites (for example, the application portal). Their privacy practices
+            are governed by their own policies.
+        </p>
+
+        <h2>Contact</h2>
+        <p>
+            If you have questions about this Privacy Policy, contact us at
+            <a href="mailto:info@gilavalleyrentals.com">info@gilavalleyrentals.com</a>.
+        </p>
+    </main>
+
+    <script>
+        // Get the navigation bar
+        var navbar = document.querySelector('.nav');
+
+        // Get the offset position of the navigation bar
+        var sticky = navbar.offsetTop;
+
+        // Add the sticky class to the navigation bar when the user scrolls past the offset position
+        function stickyNavbar() {
+            if (window.pageYOffset >= sticky) {
+                navbar.classList.add('sticky');
+            } else {
+                navbar.classList.remove('sticky');
+            }
+        }
+
+        // Add an event listener to the window object to call the stickyNavbar function when the user scrolls
+        window.addEventListener('scroll', stickyNavbar);
+    </script>
+</body>
+</html>
